@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ruairi.amazeing" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Start"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Room1"
+            android:label="@string/title_activity_room1" >
+        </activity>
+        <activity
+            android:name=".Room2"
+            android:label="@string/title_activity_room2"
+            android:parentActivityName=".Room1" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ruairi.amazeing.Room1" />
+        </activity>
+        <activity
+            android:name=".Room3"
+            android:label="@string/title_activity_room3"
+            android:parentActivityName=".Room1" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ruairi.amazeing.Room1" />
+        </activity>
+        <activity
+            android:name=".Room4"
+            android:label="@string/title_activity_room4"
+            android:parentActivityName=".Room3" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ruairi.amazeing.Room3" />
+        </activity>
+        <activity
+            android:name=".outside"
+            android:label="@string/title_activity_outside"
+            android:parentActivityName=".Exit" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ruairi.amazeing.Exit" />
+        </activity>
+        <activity
+            android:name=".Exit"
+            android:label="@string/title_activity_exit" >
+        </activity>
+    </application>
+
+</manifest>

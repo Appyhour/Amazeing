@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Amazeing</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_room1">Room1</string>
+    <string name="title_activity_room2">Room2</string>
+    <string name="title_activity_room3">Room3</string>
+    <string name="title_activity_exit">Exit</string>
+    <string name="title_activity_room4">Room4</string>
+    <string name="title_activity_outside">outside</string>
+</resources>
